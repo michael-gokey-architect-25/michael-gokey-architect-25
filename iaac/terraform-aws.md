@@ -9,6 +9,10 @@ resource "aws_dynamodb_table" "credit_apps" {
   }
 }
 
+
+---------------------------------
+
+
 resource "aws_lambda_function" "process_app" {
   filename      = "lambda.zip"
   function_name = "ProcessCreditApp"
